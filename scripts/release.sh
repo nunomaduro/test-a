@@ -59,7 +59,7 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]; then exit 1; fi
 
 printf "\n"
 
-yarn version $newVersion --no-git-tag-version --no-push --exact
+yarn version --new-version $newVersion --no-git-tag-version --no-push --exact
 
 git add package.json 
 
