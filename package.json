@@ -16,7 +16,7 @@
     "lint": "eslint . --ext .js,.ts --fix && sort-package-json",
     "pre-commit": "yarn test:lint && yarn test:types",
     "release": "./scripts/release.sh",
-    "release:publish": "npm publish --verbose --tag beta",
+    "release:publish": "npm publish --verbose --tag --publish --beta",
     "test:lint": "eslint . --ext .js,.ts",
     "test:locally": "yarn lint && yarn test:types && yarn test:unit",
     "test:size": "bundlesize",
