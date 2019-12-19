@@ -92,7 +92,7 @@ printf "\n${GREEN}[INFO]${NC} Committing changes"
 git commit -m "release: $newVersion"
 
 printf "\n${GREEN}[INFO]${NC} Creating tag and pushing it" 
-git tag "$newVersion"
+git tag "v$newVersion"
 git push origin $releaseBranch
 git push origin --tags
 
