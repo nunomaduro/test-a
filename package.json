@@ -1,6 +1,6 @@
 {
   "name": "@nunomaduro/test-a",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Package description",
   "license": "MIT",
   "files": [
@@ -16,7 +16,7 @@
     "lint": "eslint . --ext .js,.ts --fix && sort-package-json",
     "pre-commit": "yarn test:lint && yarn test:types",
     "release": "./scripts/release.sh",
-    "release:publish": "npm publish --verbose --tag --publish --beta",
+    "release:publish": "npm publish --verbose --publish --access public",
     "test:lint": "eslint . --ext .js,.ts",
     "test:locally": "yarn lint && yarn test:types && yarn test:unit",
     "test:size": "bundlesize",
